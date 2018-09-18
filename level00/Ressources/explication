@@ -1,0 +1,27 @@
+#connection en ssh
+
+#ensuite entrer le mot de passe level00
+
+#une fois connecté chercher les fichiers avec un user du nom de flag00
+#et rediriger var la sortie d'erreur les resultats permission denied
+
+    find / -user flag00 2>/dev/null
+
+#on obitent deux resultats
+
+    /usr/sbin/john
+    /rofs/usr/sbin/john
+
+#on affiche le premier fichier
+
+    cat /usr/sbin/john
+    >cdiiddwpgswtgt
+
+#on se rend sur dcode.fr, appliquer on Rot15 devoile
+    +15	NOTTOOHARDHERE
+
+    su flag00
+    password:nottoohardhere
+    >Don't forget to launch getflag !
+    getflag
+    Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
