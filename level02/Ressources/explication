@@ -1,0 +1,18 @@
+#un fichier pcap est present dans le dossier level2
+#nous devons le copier pour l'upload sur cloudshark
+
+scp -P 4242 level02@192.168.0.47:/home/user/level02/level02.pcap level02.pcap
+
+password:(flag01)
+
+chmod 777 level02.pcap
+
+#upload le fichier sur cloudshark
+
+click sur "analysis tools", "follow stream"
+
+    >Password:
+    >ft_wandr...NDRel.L0L
+    (.=7f=caractere delete)
+
+    mdp:ft_waNDReL0L
