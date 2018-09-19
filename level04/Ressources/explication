@@ -1,0 +1,18 @@
+#level04.pl est un code en perl
+
+#si on l'execute ca affiche "Content-type: text/html"
+
+#en faisant un cat de ce fichier on peu voir qu'une
+fonction x est presente et est defini dans la parcelle sub x {...}
+
+#en fin de code on peu voir x(param("x"))
+la fonction x attend une variable "x" en parametre
+
+#on peu egalement voir localhost:4747
+il faut dans un premier temps entrer l'adresse de la VM sur le port 4747 dans un navigateur
+    >192.168.0.47:4747
+
+pour le parametre x il faut
+    >http://192.168.0.47:4747/?x=`getflag`
+
+qui affiche le token recherché

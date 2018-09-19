@@ -46,5 +46,6 @@ echo "42hDRfypTqqnw" > password
     >Use the "--show" option to display all of the cracked passwords reliably
     >Session completed
 
+(john stock le password dechifré dans john.pot)
 su flag01
 password:abcdefg
