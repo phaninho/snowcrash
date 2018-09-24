@@ -12,7 +12,9 @@ la fonction x attend une variable "x" en parametre
 il faut dans un premier temps entrer l'adresse de la VM sur le port 4747 dans un navigateur
     >192.168.0.47:4747
 
-pour le parametre x il faut
+pour le parametre x il est affiché avec echo, ce qui fait qu'on peut profiter d'avoir les droits de l'user flag04 pour exploiter la faille
+et faire un getflag
+il faut donc mettre en valeur de x:
     >http://192.168.0.47:4747/?x=`getflag`
 
 qui affiche le token recherché
