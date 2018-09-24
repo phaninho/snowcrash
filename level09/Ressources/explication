@@ -1,0 +1,28 @@
+On commance par executer le binaire
+    -You need to provied only one arg.
+
+on met token en arg
+    -tpmhr
+
+on met qqqqq en arg
+    -qrstu
+
+deux deduction, le binaire n'ouvre pas le fichier, il se contente
+d'afficher ce qu'il lie sur l'entree standart tout en incrementant
+la letre suivante par l'index qui parcourt la chaine
+
+si on cat token
+    -f4kmm6p|=�p�n��DB�Du{��
+
+et quand on fait strings level09
+    -You should not reverse this
+
+un indice pour faire comprendre que c'est exactement l'inverse de ce
+qu'il faut faire
+Il faut donc coder un programme qui lie le fichier et l'affiche en decrementer la lettre par la valeur de l'index
+
+cela affiche le token
+
+    -f3iji1ju5yuevaus41q1afiuq
+
+plus qu'a su flag09 et getflag
