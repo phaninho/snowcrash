@@ -1,0 +1,6 @@
+
+ecouter le port 6969 sur le terminal
+    >nc -l 6969
+
+envoi d'un fichier depuis la VM
+    >./level10 fichier adresse_client
