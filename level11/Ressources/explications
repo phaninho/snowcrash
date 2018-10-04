@@ -1,0 +1,9 @@
+le fichier lua detiens un code chifré en sha1 qui est un leure
+en executant le scipt lua, on s'appercoit que l'adresse est deja utilisee.
+On se connect a l'adresse avec nc, puis un mot de passe est demandé.
+il suffit de mettre
+    >;getflag > /tmp/flag
+
+  prog = io.popen("echo "..pass.." | sha1sum", "r")
+  cette ligne correspond a l'input de l'utilisateur lors de la saisie du mot de passe.
+  le ";" sert a stopper la commande echo et nous permet d'utilier getflag.
