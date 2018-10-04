@@ -1,6 +1,19 @@
-
-ecouter le port 6969 sur le terminal
+en faisant un strings level10 on peux voir la presence de
+       >"%s file host
+	   >  sends file to host if you have access to it
+       >Connecting to %s:6969 ..
+       >Unable to connect to host %s"
+ca laisse entendre qu'il va falloir ecouter le port 6969 sur le terminal
+afin de transferer le fichier "token"
     >nc -l 6969
+nous avons fait un script en ecoute qui tourne en boucle.
 
-envoi d'un fichier depuis la VM
-    >./level10 fichier adresse_client
+nous n'avons pas les droits sur "token" du coup nous ne pouvons pas le transferer.
+Il faut donc creer plusieurs scripts
+Le premier va creer alternativement le meme lien symbolique vers "~/token" puis "/tmp/tekken" que nous avons créé
+Le deuxieme va lancer en boucle level10 avec notre lien symbolique a l'adresse de notre ip locale
+
+En lancant les deux scripts en meme temps nous arrivons a utiliser une race condition entre la lecture des droits
+et l'ouverture du fichier.
+
+ainsi le flag  "woupa2yuojeeaaed06riuj63c" apparait
