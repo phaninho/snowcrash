@@ -1,0 +1,9 @@
+cette exercice est basé sur le meme principe que le level04,
+il faut par exemple ouvrir un explorateur et entrer l'adresseIP de la vm sur le port 4646.
+
+le premier argument attendu subit une transformation de minuscule a majuscule.
+On ne peut donc pas utilise la commande getflag directement
+Il faut donc creer un script appelé ABCD que l'on rend executable et qui fait un "getflag > /tmp/pass"
+
+voici la ce qu'il faut ecrire dans l'url:
+    >adresse_ip:4646/?x="`/*/ABCD`"

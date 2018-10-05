@@ -1,0 +1,24 @@
+le programme nous annonce lors de son execution que l'UID attendu est 4242 et non pas 2013
+en faisant nm on peut voir la presence d'un getuid
+nous avons utilisé gdb pour desassembler le code et modifier la valeur des registres apres l'appel de cette fonction
+
+pour cela
+
+    >gdb level13
+    >disassemble main (decomposer le main et trouver l'adresse du getuid)
+    >break * main+14 (cela nous premetra de stopper le programme au niveau de la comparaison)
+    >run
+    >info registers (pour trouver le registre a modifier)
+    >set $eax = 4242
+    >continue
+
+ou bien
+
+    >gdb level13
+    >disassemble main (decomposer le main et trouver l'adresse apres la condition d'exclusion)
+    >break main (cela nous premetra de stopper le programme au debut)
+    >run
+    >set $pc = main+63
+    >continue
+
+et le flag apparait
