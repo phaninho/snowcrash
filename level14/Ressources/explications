@@ -1,0 +1,22 @@
+aucun indice, aucun fichier correspondant a level14 ou bien flag14
+il faut se trouner du cote du binaire de getflag
+utiliser gdb pour le desassembler et reussir a passer toutes les parites du programme
+qui nous ferait quitter avoir d'arriver au moment ou il y a la comparaison des UID.
+le flag14 a pour uid 3014, en hexa ca donne 0xBC6
+une fois cette comparaison localiser dans le binaire il suffit de jumper a l'adresse indiquée
+par cette condition pour passer le niveau et obtenir le flag.
+
+start
+b *0x80489a3
+b *0x8048a51
+b *0x8048a84
+b *0x8048ab3
+b *0x8048acf
+b *0x8048b0a
+c
+jump *0x80489a8
+jump *0x8048a57
+jump *0x8048a89
+jump *0x8048ab9
+jump *0x8048ad5
+jump *0x8048de5

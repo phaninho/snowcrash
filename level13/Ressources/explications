@@ -19,6 +19,7 @@ ou bien
     >break main (cela nous premetra de stopper le programme au debut)
     >run
     >set $pc = main+63
+    >info registers (pour trouver le registre a modifier)
     >continue
 
 et le flag apparait
